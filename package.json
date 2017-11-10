@@ -4,7 +4,7 @@
   "description": "todo api service",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run lint && tsc",
     "lint": "tslint src/**/*.ts test/**/*.ts",
     "pretest": "npm run build",
     "start": "npm run build && node dist/app.js",
